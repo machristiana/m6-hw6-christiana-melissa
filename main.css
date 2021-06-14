@@ -34,7 +34,7 @@
             margin-bottom: 50px;
         }
         
-        p {
+        .style {
             width: 42%;
             text-align: center;
             background-color: yellow;
@@ -59,6 +59,29 @@
             background-color: greenyellow;
         }
         
+        p {
+            font-family: bilo, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            color: #5327a0;
+        }
+        
+        button {
+            padding: 1%;
+            margin-left: 10%;
+            margin-bottom: 7%;
+        }
+        
+        #new_link {
+            text-decoration: none;
+            font-family: bilo, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            color: #5327a0;
+        }
+        
         @media (min-width: 600px) {
             section {
                 display: flex;
@@ -69,7 +92,7 @@
                 justify-content: center;
                 margin: 3%;
             }
-            p {
+            .style {
                 width: auto;
                 padding: 22% 8%;
             }
