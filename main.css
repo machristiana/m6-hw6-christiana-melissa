@@ -59,6 +59,10 @@
             background-color: greenyellow;
         }
         
+        .color {
+            background-color: indianred;
+        }
+        
         p {
             font-family: bilo, sans-serif;
             font-weight: 700;
