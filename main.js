@@ -1,3 +1,20 @@
+//Boxes all change color when hovering over one of them
+var change_color = document.getElementsByClassName('change-color');
+
+function changeColor() {
+    for (i = 0; i < change_color.length; i++) {
+        change_color[i].children[0].classList.toggle('color');
+    }
+}
+
+
+for (i = 0; i < change_color.length; i++) {
+    change_color[i].addEventListener('mouseenter', changeColor);
+    change_color[i].addEventListener('mouseleave', changeColor);
+}
+
+
+
 //Message appear when Box 1 is clicked
 var message1 = document.createElement("p");
 
@@ -40,46 +57,3 @@ document.getElementById("box4").addEventListener("click",
         document.getElementById("new_p4").appendChild(message4);
     }, false
 );
-
-
-
-
-// document.getElementsByClassName("color")[0].addEventListener("mouseover",
-//     function() {
-//         document.getElementsByClassName("color")[0].style.backgroundColor = "pink";
-//     }, false
-// );
-
-
-// document.getElementsByClassName("color")[0].addEventListener("mouseleave",
-//     function() {
-//         document.getElementsByClassName("color")[0].style.backgroundColor = "auto;
-//     }, false
-// );
-
-
-// document.getElementsByClassName("color")[0].addEventListener("mouseover",
-//     function() {
-//         this.children[0].classList.toggle('color');
-//     }, false
-// );
-
-
-// this.children[0].classList.toggle('color')
-
-
-
-
-
-
-var change_color = document.getElementsByClassName('change-color');
-
-function changeColor() {
-    this.children[0].classList.toggle('color');
-}
-
-
-for (i = 0; i < change_color.length; i++) {
-    change_color[i].addEventListener('mouseenter', changeColor);
-    change_color[i].addEventListener('mouseleave', changeColor);
-}
